@@ -2,7 +2,7 @@
 const scrollBtn = document.querySelector('.scroll-to-top')
 
 const refreshButtonVisibility = () => {
-  if (document.documentElement.scrollTop < 3200){
+  if (document.documentElement.scrollTop < 2900){
     scrollBtn.style.display = "none";
   } else {
     scrollBtn.style.display = "block";
@@ -18,3 +18,5 @@ document.documentElement.scrollTop = 0;
 document.addEventListener('scroll', (e) => {
 refreshButtonVisibility();
 });
+
+// < 3200
